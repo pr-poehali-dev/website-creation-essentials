@@ -1,3 +1,12 @@
+import {
+  Block6Reviews,
+  Block7Diagnostics,
+  Block8Guides,
+  Block9Faq,
+  Block10Cta,
+  Block11Footer,
+} from "@/components/landing/FinalBlocks";
+
 const TATYANA_PHOTO = "https://cdn.poehali.dev/projects/4fe2226f-b854-4e43-9235-040cb0215efa/files/1630e832-628a-4a1a-b321-ec25b73fc3aa.jpg";
 
 const Index = () => {
@@ -1753,7 +1762,8 @@ const Index = () => {
               href="#diagnostics"
               onClick={e => {
                 e.preventDefault();
-                alert("Ссылка на блок диагностики — настроим позже");
+                const el = document.getElementById("diagnostics");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
               }}
               style={{
                 color: "#E67E22",
@@ -1775,6 +1785,13 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Block6Reviews />
+      <Block7Diagnostics />
+      <Block8Guides />
+      <Block9Faq />
+      <Block10Cta />
+      <Block11Footer />
 
       {/* Адаптивный CSS */}
       <style>{`
@@ -1913,6 +1930,53 @@ const Index = () => {
           .service-card {
             padding: 36px 28px !important;
           }
+        }
+
+        /* Блок 6 — отзыв */
+        @media (max-width: 800px) {
+          .review-grid {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+          .review-card {
+            padding: 48px 32px !important;
+          }
+        }
+
+        /* Блок 7 — диагностика */
+        @media (max-width: 900px) {
+          .diag-grid {
+            grid-template-columns: 1fr !important;
+            gap: 48px !important;
+          }
+        }
+
+        /* Блок 8 — гайды */
+        .guide-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 24px 60px rgba(230, 126, 34, 0.12);
+          border-color: #F0D0B0 !important;
+        }
+        @media (max-width: 900px) {
+          .guides-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+
+        /* Блок 9 — FAQ */
+        @media (max-width: 800px) {
+          .faq-grid {
+            grid-template-columns: 1fr !important;
+            gap: 40px !important;
+          }
+          .faq-grid > div:first-child {
+            position: static !important;
+          }
+        }
+
+        /* Инпуты формы */
+        input:focus, textarea:focus {
+          border-color: #E67E22 !important;
         }
       `}</style>
     </div>
