@@ -570,6 +570,7 @@ export const Block9Faq = () => {
 
   return (
     <section
+      id="faq"
       style={{
         background: "#FBFAF7",
         padding: "140px 32px",
@@ -690,6 +691,7 @@ export const Block9Faq = () => {
 
 export const Block10Cta = () => (
   <section
+    id="contacts"
     style={{
       background: "linear-gradient(165deg, #1E2A36 0%, #141B24 100%)",
       padding: "140px 32px",

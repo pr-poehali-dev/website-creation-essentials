@@ -1,3 +1,4 @@
+import Header from "@/components/landing/Header";
 import {
   Block6Reviews,
   Block7Diagnostics,
@@ -27,12 +28,13 @@ const Index = () => {
         fontFamily: "'Roboto', sans-serif",
       }}
     >
+      <Header />
       {/* HERO SECTION */}
       <section
         style={{
           maxWidth: 1200,
           margin: "0 auto",
-          padding: "80px 32px 80px",
+          padding: "120px 32px 80px",
           display: "grid",
           gridTemplateColumns: "60% 40%",
           gap: 48,
@@ -989,6 +991,7 @@ const Index = () => {
 
       {/* БЛОК 4 — ЭКСПЕРТ ТАТЬЯНА */}
       <section
+        id="about"
         style={{
           position: "relative",
           background: "#ffffff",
