@@ -590,6 +590,394 @@ const Index = () => {
         </div>
       </section>
 
+      {/* БЛОК 3 — БЕЗ СИСТЕМЫ ДЕНЬГИ УПРАВЛЯЮТ ВАМИ */}
+      <section
+        style={{
+          position: "relative",
+          background: "#141B24",
+          padding: "140px 32px",
+          overflow: "hidden",
+          color: "#ffffff",
+        }}
+      >
+        {/* Запутанные линии-фон */}
+        <svg
+          aria-hidden
+          viewBox="0 0 1440 800"
+          preserveAspectRatio="xMidYMid slice"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            pointerEvents: "none",
+            opacity: 0.35,
+          }}
+        >
+          <defs>
+            <linearGradient id="tangleGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#E67E22" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#E67E22" stopOpacity="0" />
+            </linearGradient>
+            <radialGradient id="fogGrad" cx="70%" cy="50%" r="55%">
+              <stop offset="0%" stopColor="#E67E22" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#141B24" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Туманное пятно */}
+          <rect width="1440" height="800" fill="url(#fogGrad)" />
+
+          {/* Запутанные кривые */}
+          <path
+            d="M 950 120 C 1200 200, 800 300, 1100 380 S 900 540, 1250 620 S 850 740, 1150 800"
+            stroke="url(#tangleGrad)"
+            strokeWidth="1.2"
+            fill="none"
+          />
+          <path
+            d="M 1000 80 C 750 250, 1300 320, 950 460 S 1250 580, 900 700"
+            stroke="url(#tangleGrad)"
+            strokeWidth="1.2"
+            fill="none"
+          />
+          <path
+            d="M 1100 200 C 900 300, 1300 400, 1050 500 S 1200 650, 950 780"
+            stroke="url(#tangleGrad)"
+            strokeWidth="1"
+            fill="none"
+          />
+          <path
+            d="M 870 60 C 1350 180, 780 420, 1280 560 S 830 700, 1200 820"
+            stroke="url(#tangleGrad)"
+            strokeWidth="0.8"
+            fill="none"
+          />
+          <path
+            d="M 1150 40 C 850 160, 1380 260, 1020 380 S 1320 520, 880 660"
+            stroke="url(#tangleGrad)"
+            strokeWidth="0.8"
+            fill="none"
+          />
+          <path
+            d="M 920 260 C 1180 360, 820 460, 1100 580 S 900 720, 1250 820"
+            stroke="url(#tangleGrad)"
+            strokeWidth="0.6"
+            fill="none"
+          />
+        </svg>
+
+        {/* Зернистый оверлей */}
+        <div
+          aria-hidden
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "radial-gradient(ellipse at 20% 100%, rgba(230,126,34,0.12), transparent 60%)",
+            pointerEvents: "none",
+          }}
+        />
+
+        <div
+          style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 1,
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: 80,
+            alignItems: "center",
+          }}
+          className="block3-grid"
+        >
+          {/* LEFT — текст и список */}
+          <div>
+            {/* Маркер */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 10,
+                marginBottom: 24,
+              }}
+            >
+              <div
+                style={{
+                  width: 32,
+                  height: 2,
+                  background: "#E67E22",
+                }}
+              />
+              <span
+                style={{
+                  fontFamily: "'Manrope', sans-serif",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#E67E22",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Цена бездействия
+              </span>
+            </div>
+
+            {/* H2 */}
+            <h2
+              style={{
+                fontFamily: "'Manrope', sans-serif",
+                fontWeight: 800,
+                fontSize: "clamp(36px, 5vw, 60px)",
+                lineHeight: 1.05,
+                color: "#ffffff",
+                margin: "0 0 16px",
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Без системы{" "}
+              <span
+                style={{
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  color: "#E67E22",
+                }}
+              >
+                деньги
+              </span>
+              <br />
+              управляют вами
+            </h2>
+
+            <p
+              style={{
+                fontSize: 17,
+                lineHeight: 1.6,
+                color: "#8A96A6",
+                margin: "0 0 48px",
+                maxWidth: 480,
+              }}
+            >
+              Если ничего не менять, эти ощущения становятся фоном вашей жизни —
+              и забирают энергию с каждым днём.
+            </p>
+
+            {/* Список болей */}
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {[
+                "Тревога",
+                "Чувство, что опять не хватило",
+                "Откладывание жизни на потом",
+                "Зависимость от зарплаты или заказов",
+                "Ссоры из-за денег в семье",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className="pain-row"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 20,
+                    padding: "22px 0",
+                    borderBottom:
+                      i === 4 ? "none" : "1px solid rgba(255,255,255,0.07)",
+                    fontFamily: "'Manrope', sans-serif",
+                    fontWeight: 600,
+                    fontSize: "clamp(20px, 2.4vw, 28px)",
+                    color: "#E8EBEF",
+                    letterSpacing: "-0.01em",
+                    animationDelay: `${i * 90}ms`,
+                  }}
+                >
+                  {/* Крестик в круге */}
+                  <span
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: 36,
+                      height: 36,
+                      borderRadius: "50%",
+                      background: "rgba(230, 126, 34, 0.12)",
+                      border: "1px solid rgba(230, 126, 34, 0.35)",
+                      color: "#E67E22",
+                      fontSize: 16,
+                      fontWeight: 700,
+                      flexShrink: 0,
+                    }}
+                  >
+                    ✕
+                  </span>
+                  <span className="pain-text">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* RIGHT — визуал «человек в тумане» */}
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: 520,
+            }}
+            className="fog-visual"
+          >
+            {/* Круги-ореолы */}
+            <div
+              style={{
+                position: "absolute",
+                width: 480,
+                height: 480,
+                borderRadius: "50%",
+                background:
+                  "radial-gradient(circle, rgba(230,126,34,0.22), rgba(230,126,34,0) 65%)",
+                filter: "blur(20px)",
+                animation: "pulseFog 6s ease-in-out infinite",
+              }}
+            />
+            <div
+              style={{
+                position: "absolute",
+                width: 340,
+                height: 340,
+                borderRadius: "50%",
+                border: "1px dashed rgba(230, 126, 34, 0.25)",
+                animation: "spinSlow 40s linear infinite",
+              }}
+            />
+            <div
+              style={{
+                position: "absolute",
+                width: 440,
+                height: 440,
+                borderRadius: "50%",
+                border: "1px solid rgba(255, 255, 255, 0.05)",
+              }}
+            />
+
+            {/* Фигура человека (минималистичная SVG) */}
+            <svg
+              viewBox="0 0 200 280"
+              style={{
+                position: "relative",
+                width: 200,
+                zIndex: 2,
+                filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.5))",
+              }}
+            >
+              {/* Голова */}
+              <circle
+                cx="100"
+                cy="50"
+                r="28"
+                fill="none"
+                stroke="#E67E22"
+                strokeWidth="1.5"
+                opacity="0.85"
+              />
+              {/* Шея и плечи */}
+              <path
+                d="M 100 78 L 100 100 M 50 130 C 60 110, 80 100, 100 100 C 120 100, 140 110, 150 130"
+                fill="none"
+                stroke="#E67E22"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                opacity="0.85"
+              />
+              {/* Туловище */}
+              <path
+                d="M 65 130 L 58 240 M 135 130 L 142 240 M 65 130 L 135 130"
+                fill="none"
+                stroke="#E67E22"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                opacity="0.7"
+              />
+              {/* Руки */}
+              <path
+                d="M 58 135 L 40 200 M 142 135 L 160 200"
+                fill="none"
+                stroke="#E67E22"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                opacity="0.6"
+              />
+              {/* Вопросительные знаки вокруг */}
+              <text
+                x="30"
+                y="40"
+                fontFamily="Manrope"
+                fontSize="28"
+                fontWeight="700"
+                fill="#E67E22"
+                opacity="0.5"
+              >
+                ?
+              </text>
+              <text
+                x="160"
+                y="70"
+                fontFamily="Manrope"
+                fontSize="36"
+                fontWeight="700"
+                fill="#E67E22"
+                opacity="0.35"
+              >
+                ?
+              </text>
+              <text
+                x="20"
+                y="150"
+                fontFamily="Manrope"
+                fontSize="22"
+                fontWeight="700"
+                fill="#E67E22"
+                opacity="0.3"
+              >
+                ?
+              </text>
+              <text
+                x="170"
+                y="180"
+                fontFamily="Manrope"
+                fontSize="26"
+                fontWeight="700"
+                fill="#E67E22"
+                opacity="0.4"
+              >
+                ?
+              </text>
+            </svg>
+
+            {/* Туман снизу */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: 160,
+                background:
+                  "linear-gradient(to top, #141B24 10%, rgba(20,27,36,0.4) 60%, transparent)",
+                pointerEvents: "none",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Адаптивный CSS */}
       <style>{`
         @media (max-width: 768px) {
@@ -650,6 +1038,47 @@ const Index = () => {
             opacity: 1;
             transform: translateY(0);
           }
+        }
+
+        /* Блок 3 — адаптив */
+        @media (max-width: 900px) {
+          .block3-grid {
+            grid-template-columns: 1fr !important;
+            gap: 48px !important;
+          }
+          .fog-visual {
+            min-height: 360px !important;
+          }
+        }
+
+        /* Блок 3 — анимации */
+        .pain-row {
+          opacity: 0;
+          transform: translateX(-20px);
+          animation: painSlideIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+          transition: padding-left 0.3s ease, color 0.3s ease;
+        }
+        .pain-row:hover {
+          padding-left: 12px !important;
+          color: #ffffff !important;
+        }
+        .pain-row:hover .pain-text {
+          text-decoration: line-through;
+          text-decoration-color: rgba(230, 126, 34, 0.7);
+          text-decoration-thickness: 2px;
+        }
+        @keyframes painSlideIn {
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes pulseFog {
+          0%, 100% { opacity: 0.6; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.08); }
+        }
+        @keyframes spinSlow {
+          to { transform: rotate(360deg); }
         }
       `}</style>
     </div>
