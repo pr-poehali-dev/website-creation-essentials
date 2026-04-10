@@ -978,6 +978,804 @@ const Index = () => {
         </div>
       </section>
 
+      {/* БЛОК 4 — ЭКСПЕРТ ТАТЬЯНА */}
+      <section
+        style={{
+          position: "relative",
+          background: "#ffffff",
+          padding: "140px 32px",
+          overflow: "hidden",
+        }}
+      >
+        {/* Декор — фоновая цифра */}
+        <div
+          aria-hidden
+          style={{
+            position: "absolute",
+            top: 60,
+            left: -40,
+            fontFamily: "'Manrope', sans-serif",
+            fontSize: 420,
+            fontWeight: 800,
+            color: "#FBF6EE",
+            lineHeight: 0.8,
+            letterSpacing: "-0.05em",
+            pointerEvents: "none",
+            userSelect: "none",
+            zIndex: 0,
+          }}
+        >
+          04
+        </div>
+
+        <div
+          style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 1,
+            display: "grid",
+            gridTemplateColumns: "440px 1fr",
+            gap: 80,
+            alignItems: "start",
+          }}
+          className="expert-grid"
+        >
+          {/* LEFT — фото */}
+          <div style={{ position: "sticky", top: 40 }}>
+            <div
+              style={{
+                position: "relative",
+                borderRadius: 30,
+                overflow: "hidden",
+                boxShadow: "0 30px 80px rgba(30, 42, 54, 0.15)",
+              }}
+            >
+              <img
+                src={TATYANA_PHOTO}
+                alt="Татьяна — финансовый наставник"
+                style={{
+                  width: "100%",
+                  height: 540,
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
+              {/* Подпись на фото */}
+              <div
+                style={{
+                  position: "absolute",
+                  left: 24,
+                  bottom: 24,
+                  right: 24,
+                  background: "rgba(255,255,255,0.92)",
+                  backdropFilter: "blur(10px)",
+                  borderRadius: 16,
+                  padding: "14px 18px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                }}
+              >
+                <div
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: "50%",
+                    background: "#E67E22",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#ffffff",
+                    fontSize: 18,
+                    fontFamily: "'Manrope', sans-serif",
+                    fontWeight: 700,
+                  }}
+                >
+                  Т
+                </div>
+                <div>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontFamily: "'Manrope', sans-serif",
+                      fontWeight: 700,
+                      fontSize: 15,
+                      color: "#1E2A36",
+                    }}
+                  >
+                    Татьяна
+                  </p>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: 12,
+                      color: "#7F8C8D",
+                    }}
+                  >
+                    Финансовый наставник · 8 лет
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT — текст */}
+          <div>
+            {/* Маркер */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 10,
+                marginBottom: 24,
+              }}
+            >
+              <div style={{ width: 32, height: 2, background: "#E67E22" }} />
+              <span
+                style={{
+                  fontFamily: "'Manrope', sans-serif",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#E67E22",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Знакомьтесь
+              </span>
+            </div>
+
+            {/* H2 */}
+            <h2
+              style={{
+                fontFamily: "'Manrope', sans-serif",
+                fontWeight: 800,
+                fontSize: "clamp(36px, 5vw, 60px)",
+                lineHeight: 1.05,
+                color: "#1E2A36",
+                margin: "0 0 40px",
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Я{" "}
+              <span
+                style={{
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  color: "#E67E22",
+                }}
+              >
+                Татьяна,
+              </span>
+              <br />
+              финансовый наставник
+            </h2>
+
+            {/* Цитата */}
+            <figure
+              style={{
+                position: "relative",
+                margin: "0 0 48px",
+                padding: "28px 0 28px 36px",
+                borderLeft: "3px solid #E67E22",
+              }}
+            >
+              {/* Открывающая кавычка */}
+              <span
+                aria-hidden
+                style={{
+                  position: "absolute",
+                  left: 30,
+                  top: -20,
+                  fontFamily: "'Manrope', sans-serif",
+                  fontSize: 120,
+                  color: "#FBE8D0",
+                  lineHeight: 1,
+                  fontWeight: 800,
+                  zIndex: 0,
+                  pointerEvents: "none",
+                }}
+              >
+                «
+              </span>
+              <blockquote
+                style={{
+                  position: "relative",
+                  zIndex: 1,
+                  margin: 0,
+                  fontFamily: "'Cormorant', 'Manrope', serif",
+                  fontStyle: "italic",
+                  fontSize: 22,
+                  lineHeight: 1.5,
+                  color: "#7F8C8D",
+                  fontWeight: 400,
+                }}
+              >
+                «Я не учу сидеть на гречке. Я помогаю выстроить отношения с
+                деньгами, при которых появляется спокойствие, свобода выбора и
+                возможность исполнять мечты».
+              </blockquote>
+            </figure>
+
+            {/* Чек-пункты */}
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: "0 0 40px",
+                display: "flex",
+                flexDirection: "column",
+                gap: 16,
+              }}
+            >
+              {[
+                "Бережный подход",
+                "Опыт работы с нестабильным доходом",
+                "Без жёсткой экономии",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 16,
+                    fontFamily: "'Manrope', sans-serif",
+                    fontWeight: 600,
+                    fontSize: 18,
+                    color: "#1E2A36",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: 32,
+                      height: 32,
+                      borderRadius: "50%",
+                      background: "#E8F5E9",
+                      color: "#2E7D32",
+                      fontSize: 14,
+                      fontWeight: 700,
+                      flexShrink: 0,
+                    }}
+                  >
+                    ✓
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* Допоплнительный текст */}
+            <p
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+                fontSize: 16,
+                lineHeight: 1.65,
+                color: "#5A6878",
+                margin: 0,
+                maxWidth: 560,
+              }}
+            >
+              Ко мне приходят, когда хочется порядка, уверенности и опоры в
+              деньгах. Я верю: финансы — это не про ограничения, а про комфорт
+              и свободу.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* БЛОК 5 — УСЛУГИ */}
+      <section
+        id="services"
+        style={{
+          position: "relative",
+          background: "linear-gradient(180deg, #FBFAF7 0%, #FFF4E6 100%)",
+          padding: "140px 32px",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          {/* Заголовок секции */}
+          <div style={{ textAlign: "center", marginBottom: 72 }}>
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 10,
+                marginBottom: 20,
+              }}
+            >
+              <div style={{ width: 32, height: 2, background: "#E67E22" }} />
+              <span
+                style={{
+                  fontFamily: "'Manrope', sans-serif",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#E67E22",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Услуги
+              </span>
+              <div style={{ width: 32, height: 2, background: "#E67E22" }} />
+            </div>
+            <h2
+              style={{
+                fontFamily: "'Manrope', sans-serif",
+                fontWeight: 800,
+                fontSize: "clamp(36px, 5vw, 60px)",
+                lineHeight: 1.05,
+                color: "#1E2A36",
+                margin: 0,
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Как я могу{" "}
+              <span
+                style={{
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  color: "#E67E22",
+                }}
+              >
+                вам помочь
+              </span>
+            </h2>
+          </div>
+
+          {/* Карточки услуг */}
+          <div
+            className="services-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 28,
+              marginBottom: 48,
+            }}
+          >
+            {/* КАРТОЧКА 1 — Консультация */}
+            <article
+              className="service-card service-light"
+              style={{
+                position: "relative",
+                background: "#ffffff",
+                borderRadius: 32,
+                padding: "48px 44px",
+                border: "1px solid #F0EBE0",
+                boxShadow: "0 4px 30px rgba(30, 42, 54, 0.05)",
+                transition: "transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {/* Тип */}
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: "#FFF3E8",
+                  color: "#C06010",
+                  borderRadius: 100,
+                  padding: "6px 14px",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  fontFamily: "'Manrope', sans-serif",
+                  letterSpacing: "0.04em",
+                  textTransform: "uppercase",
+                  width: "fit-content",
+                  marginBottom: 24,
+                }}
+              >
+                <span style={{ fontSize: 8, color: "#E67E22" }}>●</span>
+                Разовая встреча
+              </span>
+
+              <h3
+                style={{
+                  fontFamily: "'Manrope', sans-serif",
+                  fontWeight: 800,
+                  fontSize: 30,
+                  color: "#1E2A36",
+                  margin: "0 0 24px",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.15,
+                }}
+              >
+                Индивидуальная
+                <br />
+                консультация
+              </h3>
+
+              {/* Цена */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: 12,
+                  paddingBottom: 28,
+                  marginBottom: 28,
+                  borderBottom: "1px dashed #E8DFCD",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'Manrope', sans-serif",
+                    fontWeight: 800,
+                    fontSize: 52,
+                    color: "#1E2A36",
+                    letterSpacing: "-0.03em",
+                    lineHeight: 1,
+                  }}
+                >
+                  5 000 ₽
+                </span>
+                <span style={{ color: "#7F8C8D", fontSize: 15 }}>
+                  за 1,5 часа
+                </span>
+              </div>
+
+              {/* Выгоды */}
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: "0 0 36px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 14,
+                  flex: 1,
+                }}
+              >
+                {[
+                  "Разбор вашей текущей финансовой картины",
+                  "Фокус на одном ключевом запросе",
+                  "Чёткий план действий, с которого можно начать сразу",
+                ].map((b, i) => (
+                  <li
+                    key={i}
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: 14,
+                      fontSize: 15,
+                      lineHeight: 1.5,
+                      color: "#2C3E50",
+                      fontFamily: "'Roboto', sans-serif",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: 22,
+                        height: 22,
+                        borderRadius: "50%",
+                        background: "#E8F5E9",
+                        color: "#2E7D32",
+                        fontSize: 11,
+                        fontWeight: 700,
+                        flexShrink: 0,
+                        marginTop: 2,
+                      }}
+                    >
+                      ✓
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Кнопка */}
+              <button
+                onClick={() => alert("Настройте ссылку на Telegram/WhatsApp")}
+                style={{
+                  width: "100%",
+                  height: 56,
+                  background: "transparent",
+                  color: "#E67E22",
+                  border: "2px solid #E67E22",
+                  borderRadius: 40,
+                  fontSize: 15,
+                  fontWeight: 600,
+                  fontFamily: "'Manrope', sans-serif",
+                  cursor: "pointer",
+                  transition: "all 0.25s ease",
+                  letterSpacing: "0.01em",
+                }}
+                onMouseEnter={e => {
+                  (e.target as HTMLButtonElement).style.background = "#E67E22";
+                  (e.target as HTMLButtonElement).style.color = "#ffffff";
+                }}
+                onMouseLeave={e => {
+                  (e.target as HTMLButtonElement).style.background = "transparent";
+                  (e.target as HTMLButtonElement).style.color = "#E67E22";
+                }}
+              >
+                Записаться на консультацию →
+              </button>
+            </article>
+
+            {/* КАРТОЧКА 2 — Сопровождение (тёмная, премиум) */}
+            <article
+              className="service-card service-dark"
+              style={{
+                position: "relative",
+                background:
+                  "linear-gradient(165deg, #1E2A36 0%, #141B24 100%)",
+                borderRadius: 32,
+                padding: "48px 44px",
+                border: "1px solid rgba(230, 126, 34, 0.2)",
+                boxShadow: "0 30px 80px rgba(30, 42, 54, 0.25)",
+                transition: "transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease",
+                color: "#ffffff",
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {/* Рекомендовано */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: 24,
+                  right: 24,
+                  background: "#E67E22",
+                  color: "#ffffff",
+                  fontFamily: "'Manrope', sans-serif",
+                  fontSize: 11,
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  padding: "8px 14px",
+                  borderRadius: 100,
+                }}
+              >
+                ★ Рекомендую
+              </div>
+
+              {/* Декор свет */}
+              <div
+                aria-hidden
+                style={{
+                  position: "absolute",
+                  top: -100,
+                  right: -100,
+                  width: 300,
+                  height: 300,
+                  borderRadius: "50%",
+                  background:
+                    "radial-gradient(circle, rgba(230,126,34,0.18), transparent 70%)",
+                  pointerEvents: "none",
+                }}
+              />
+
+              {/* Тип */}
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: "rgba(230, 126, 34, 0.12)",
+                  color: "#F5B072",
+                  borderRadius: 100,
+                  padding: "6px 14px",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  fontFamily: "'Manrope', sans-serif",
+                  letterSpacing: "0.04em",
+                  textTransform: "uppercase",
+                  width: "fit-content",
+                  marginBottom: 24,
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <span style={{ fontSize: 8, color: "#E67E22" }}>●</span>
+                30 дней вместе
+              </span>
+
+              <h3
+                style={{
+                  fontFamily: "'Manrope', sans-serif",
+                  fontWeight: 800,
+                  fontSize: 30,
+                  color: "#ffffff",
+                  margin: "0 0 24px",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.15,
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Месячное финансовое
+                <br />
+                сопровождение
+              </h3>
+
+              {/* Цена */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: 12,
+                  paddingBottom: 28,
+                  marginBottom: 20,
+                  borderBottom: "1px dashed rgba(255,255,255,0.12)",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'Manrope', sans-serif",
+                    fontWeight: 800,
+                    fontSize: 52,
+                    color: "#ffffff",
+                    letterSpacing: "-0.03em",
+                    lineHeight: 1,
+                  }}
+                >
+                  30 000 ₽
+                </span>
+                <span style={{ color: "#8A96A6", fontSize: 15 }}>
+                  за 30 дней
+                </span>
+              </div>
+
+              {/* Формат */}
+              <p
+                style={{
+                  margin: "0 0 24px",
+                  fontSize: 14,
+                  color: "#8A96A6",
+                  fontFamily: "'Roboto', sans-serif",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <strong style={{ color: "#E8EBEF" }}>Формат: </strong>
+                переписка, голосовые, онлайн-встречи
+              </p>
+
+              {/* Выгоды */}
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: "0 0 36px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 14,
+                  position: "relative",
+                  zIndex: 1,
+                  flex: 1,
+                }}
+              >
+                {[
+                  "Выстроенная базовая система денег",
+                  "Понятные финансовые цели и план движения",
+                  "Начатые или стабилизированные накопления",
+                  "Меньше тревоги и больше контроля",
+                ].map((b, i) => (
+                  <li
+                    key={i}
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: 14,
+                      fontSize: 15,
+                      lineHeight: 1.5,
+                      color: "#E8EBEF",
+                      fontFamily: "'Roboto', sans-serif",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: 22,
+                        height: 22,
+                        borderRadius: "50%",
+                        background: "rgba(46, 125, 50, 0.25)",
+                        color: "#81C784",
+                        fontSize: 11,
+                        fontWeight: 700,
+                        flexShrink: 0,
+                        marginTop: 2,
+                      }}
+                    >
+                      ✓
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Кнопка */}
+              <button
+                onClick={() => alert("Настройте ссылку на Telegram/WhatsApp")}
+                style={{
+                  width: "100%",
+                  height: 56,
+                  background: "#E67E22",
+                  color: "#ffffff",
+                  border: "none",
+                  borderRadius: 40,
+                  fontSize: 15,
+                  fontWeight: 700,
+                  fontFamily: "'Manrope', sans-serif",
+                  cursor: "pointer",
+                  transition: "all 0.25s ease",
+                  letterSpacing: "0.01em",
+                  boxShadow: "0 8px 28px rgba(230, 126, 34, 0.35)",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+                onMouseEnter={e => {
+                  (e.target as HTMLButtonElement).style.background = "#D35400";
+                  (e.target as HTMLButtonElement).style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={e => {
+                  (e.target as HTMLButtonElement).style.background = "#E67E22";
+                  (e.target as HTMLButtonElement).style.transform = "translateY(0)";
+                }}
+              >
+                Хочу на сопровождение →
+              </button>
+            </article>
+          </div>
+
+          {/* Ссылка-триггер */}
+          <div
+            style={{
+              textAlign: "center",
+              fontFamily: "'Roboto', sans-serif",
+              fontSize: 16,
+              color: "#5A6878",
+            }}
+          >
+            Не знаете, что выбрать?{" "}
+            <a
+              href="#diagnostics"
+              onClick={e => {
+                e.preventDefault();
+                alert("Ссылка на блок диагностики — настроим позже");
+              }}
+              style={{
+                color: "#E67E22",
+                fontWeight: 600,
+                textDecoration: "none",
+                borderBottom: "1px solid #E67E22",
+                paddingBottom: 2,
+                transition: "opacity 0.2s ease",
+              }}
+              onMouseEnter={e => {
+                (e.target as HTMLAnchorElement).style.opacity = "0.7";
+              }}
+              onMouseLeave={e => {
+                (e.target as HTMLAnchorElement).style.opacity = "1";
+              }}
+            >
+              Пройдите бесплатную диагностику →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Адаптивный CSS */}
       <style>{`
         @media (max-width: 768px) {
@@ -1079,6 +1877,42 @@ const Index = () => {
         }
         @keyframes spinSlow {
           to { transform: rotate(360deg); }
+        }
+
+        /* Блок 4 — адаптив */
+        @media (max-width: 900px) {
+          .expert-grid {
+            grid-template-columns: 1fr !important;
+            gap: 48px !important;
+          }
+          .expert-grid > div:first-child {
+            position: static !important;
+            max-width: 420px;
+            margin: 0 auto;
+          }
+        }
+
+        /* Блок 5 — услуги */
+        .service-card:hover {
+          transform: translateY(-8px);
+        }
+        .service-light:hover {
+          box-shadow: 0 30px 60px rgba(230, 126, 34, 0.15) !important;
+          border-color: #F0D0B0 !important;
+        }
+        .service-dark:hover {
+          box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35) !important;
+        }
+
+        @media (max-width: 900px) {
+          .services-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 560px) {
+          .service-card {
+            padding: 36px 28px !important;
+          }
         }
       `}</style>
     </div>
